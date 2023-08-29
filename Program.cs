@@ -8,3 +8,17 @@ for (int i = 0; i < B; i++)
 }
 
 Console.WriteLine("{0} в степени {1} равно {2}", A, B, result);
+
+Console.Write("Введите число: ");
+int num = int.Parse(Console.ReadLine()); // считываем число с консоли
+int sum = 0;
+
+while (num != 0)
+{
+    sum += num % 10; // находим остаток от деления на 10 и добавляем его к сумме
+    num /= 10; // уменьшаем число на порядок
+}
+
+Console.WriteLine("Сумма цифр в числе: {0}", sum);
+
+
