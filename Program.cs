@@ -22,3 +22,24 @@ while (num != 0)
 Console.WriteLine("Сумма цифр в числе: {0}", sum);
 
 
+
+
+
+int[] array = new int[8]; // создаем массив из 8 элементов
+
+Random rand = new Random(); // создаем объект класса Random для генерации псевдослучайных чисел
+
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = rand.Next(100); // заполняем массив псевдослучайными числами от 0 до 99
+}
+
+Console.WriteLine("Элементы массива:");
+
+foreach (int element in array)
+{
+    Console.Write(element + " "); // выводим каждый элемент массива на экран
+}
+
+Console.WriteLine(); // переходим на новую строку
+
