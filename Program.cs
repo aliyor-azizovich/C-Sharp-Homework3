@@ -1,4 +1,5 @@
-﻿int A = 2; // замените на нужное значение
+﻿// Task 25
+int A = 2; // замените на нужное значение
 int B = 3; // замените на нужное значение
 int result = 1;
 
@@ -8,6 +9,8 @@ for (int i = 0; i < B; i++)
 }
 
 Console.WriteLine("{0} в степени {1} равно {2}", A, B, result);
+
+// Task 27
 
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine()); // считываем число с консоли
@@ -21,9 +24,7 @@ while (num != 0)
 
 Console.WriteLine("Сумма цифр в числе: {0}", sum);
 
-
-
-
+// Task 29
 
 int[] array = new int[8]; // создаем массив из 8 элементов
 
